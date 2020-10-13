@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   text: {
     color: theme.colors.barItem,
     fontWeight: theme.fontWeights.bold,
-    marginHorizontal: 5
+    marginHorizontal: 8
   },
 });
 

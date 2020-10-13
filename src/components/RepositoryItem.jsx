@@ -13,38 +13,29 @@ const styles = StyleSheet.create({
   cardImage: {
     height: 70,
     width: 70,
-    marginRight: 2,
+    marginRight: 8,
     borderRadius: 6,
   },
   info: {
-    display: "flex",
-    flexDirection: "column",
-    padding: 2,
-    flexWrap: "wrap",
+    padding: 4,
+    flexShrink: 1,
   },
   cardButton: {
-    padding: 2,
+    padding: 8,
     backgroundColor: theme.colors.primary,
     color: "white",
     fontWeight: "bold",
     borderRadius: 4,
-    margin: 1,
   },
   cardBar: {
     display: theme.display.flexContainer,
     flexDirection: "row",
-    marginVertical: 2,
     alignItems: theme.alignItems.bar,
   },
   infoBar: {
     display: theme.display.flexContainer,
     flexDirection: "row",
     justifyContent: theme.justifyContent.bar,
-  },
-  description: {
-    //display: "flex",
-    //flexWrap: "wrap",
-    //marginRight: "1",
   },
 });
 
@@ -63,9 +54,9 @@ const RepositoryItem = (props) => {
       <View style={styles.cardSection}>
         <Image style={styles.cardImage} source={{ uri: item.ownerAvatarUrl }} />
 
-        <View>
+        <View style={styles.info}>
           <Text fontWeight="bold">{item.fullName}</Text>
-          <Text style={styles.description}>{item.description}</Text>
+          <Text>{item.description}</Text>
 
           <View style={styles.cardBar}>
             <Text style={styles.cardButton} fontWeight="bold">
