@@ -19,7 +19,7 @@ const theme = {
     bold: "700",
   },
   padding: {
-    appBar: "5%",
+    appBar: 5,
   },
   display: {
     flexContainer: "flex",
@@ -32,9 +32,9 @@ const theme = {
   },
   card: {
     display: "flex",
-    padding: "2%",
+    padding: 2,
     backgroundColor: "rgb(240, 240, 240)",
-    margin: "1%",
+    margin: 1,
   },
 };
 

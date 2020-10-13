@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     fontSize: theme.fontSizes.body,
     fontFamily: theme.fonts.main,
     fontWeight: theme.fontWeights.normal,
-    marginVertical: "1%",
+    marginVertical: 1,
     flexDirection: "row",
     flexWrap: "wrap",
   },

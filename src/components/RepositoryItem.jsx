@@ -13,27 +13,27 @@ const styles = StyleSheet.create({
   cardImage: {
     height: 70,
     width: 70,
-    marginRight: "2%",
+    marginRight: 2,
     borderRadius: 6,
   },
   info: {
     display: "flex",
     flexDirection: "column",
-    padding: "2%",
+    padding: 2,
     flexWrap: "wrap",
   },
   cardButton: {
-    padding: "2%",
+    padding: 2,
     backgroundColor: theme.colors.primary,
     color: "white",
     fontWeight: "bold",
     borderRadius: 4,
-    margin: "1%",
+    margin: 1,
   },
   cardBar: {
     display: theme.display.flexContainer,
     flexDirection: "row",
-    marginVertical: "2%",
+    marginVertical: 2,
     alignItems: theme.alignItems.bar,
   },
   infoBar: {
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   description: {
     //display: "flex",
     //flexWrap: "wrap",
-    //marginRight: "1%",
+    //marginRight: "1",
   },
 });
 
@@ -57,10 +57,6 @@ const RepositoryItem = (props) => {
       ? Math.sign(num) * (Math.abs(num) / 1000).toFixed(1) + "k"
       : Math.sign(num) * Math.abs(num);
   };
-
-  /*
-  
-  */
 
   return (
     <View style={styles.card}>
