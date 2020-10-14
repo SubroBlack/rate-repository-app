@@ -6,15 +6,9 @@ import AppBarTab from "./AppBarTab";
 
 const styles = StyleSheet.create({
   container: {
-    display: theme.display.flexContainer,
     backgroundColor: theme.backgroundColors.dark,
-    padding: theme.padding.medium,
-    justifyContent: theme.justifyContent.bar,
     flexDirection: "row",
-  },
-  scrollView: {
-    //marginVertical: 1,
-    paddingVertical: 7,
+    paddingLeft: theme.padding.medium
   },
 });
 
@@ -23,9 +17,10 @@ const AppBar = () => {
 
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.scrollView} horizontal={true} >
+      <ScrollView style={styles.scrollView} horizontal>
           <AppBarTab text="Repositories" to="/" />
           <AppBarTab text="Sign In" to="/signin" />
+          <AppBarTab text="Trial" to="/trial" />
       </ScrollView>
     </View>
   );

@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
     color: theme.colors.lightText,
     fontWeight: theme.fontWeights.bold,
     fontSize: theme.fontSizes.subheading,
-    marginHorizontal: theme.margin.medium
+    marginHorizontal: theme.margin.medium,
+    paddingVertical: theme.padding.thick
   },
 });
 

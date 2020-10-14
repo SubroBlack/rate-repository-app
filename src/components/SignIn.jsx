@@ -8,7 +8,6 @@ import theme from '../theme';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     padding: theme.padding.medium
   },
   button: {
@@ -30,7 +29,7 @@ const initialCredentials = {
 const SignInForm = ({onSubmit}) => {
 
   return (
-  <View style={styles.container}>
+  <View>
     <FormikTextInput name="username" placeholder="Username"  />
     <FormikTextInput password={true} name="password" placeholder="Password" />
     <TouchableWithoutFeedback onPress={onSubmit}>
@@ -46,9 +45,11 @@ const SignIn = () => {
   };
 
   return (
-    <Formik initialValues={initialCredentials} onSubmit={onSubmit}>
+    <View style={styles.container}>
+      <Formik initialValues={initialCredentials} onSubmit={onSubmit}>
       {({ handleSubmit }) => <SignInForm onSubmit={handleSubmit} />}
     </Formik>
+    </View>
   );
 };
 
