@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Platform } from "react-native";
 import {Route, Switch, Redirect} from "react-router-native";
 import constants from "expo-constants";
 import {StatusBar} from "expo-status-bar";
@@ -16,6 +16,11 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     flexShrink: 1,
     backgroundColor: theme.backgroundColors.baseColor,
+    fontFamily: Platform.select({
+      android: theme.fonts.android,
+      ios: theme.fonts.iOS,
+      default: theme.fonts.main
+    }),
   },
 });
 
