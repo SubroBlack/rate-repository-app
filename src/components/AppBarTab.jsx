@@ -7,15 +7,12 @@ import theme from "../theme";
 
 const styles = StyleSheet.create({
   text: {
-    color: theme.colors.barItem,
+    color: theme.colors.lightText,
     fontWeight: theme.fontWeights.bold,
-    marginHorizontal: 8
+    fontSize: theme.fontSizes.subheading,
+    marginHorizontal: theme.margin.medium
   },
 });
-
-/*
-
-*/
 
 const AppBarTab = (props) => {
   return (

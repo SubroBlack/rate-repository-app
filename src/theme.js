@@ -1,11 +1,14 @@
 const theme = {
   colors: {
-    textPrimary: "#24292e",
-    textSecondary: "#586069",
-    primary: "#0366d6",
-    header: "rgba(38, 38, 38, 0.85)",
-    barItem: "white",
+    textPrimary: "rgb(36, 41, 46)",
+    textSecondary: "rgb(88, 96, 105)",
+    lightText: "rgb(255, 255, 255)",
+  },
+  backgroundColors: {
+    primary: "rgb(3, 102, 214)",
     baseColor: "rgb(200, 200, 200)",
+    dark: "rgba(38, 38, 38, 0.90)",
+    light: "rgb(255, 255, 255)",
   },
   fontSizes: {
     body: 14,
@@ -19,16 +22,23 @@ const theme = {
     bold: "700",
   },
   padding: {
-    appBar: 8,
+    thin: 4,
+    medium: 8,
+    thick: 16
+  },
+  margin: {
+    thin: 4,
+    medium: 8,
+    thick: 16
   },
   display: {
     flexContainer: "flex",
   },
   alignItems: {
-    bar: "center",
+    center: "center",
   },
   justifyContent: {
-    bar: "space-around",
+    spaced: "space-around",
   },
   card: {
     display: "flex",
@@ -36,6 +46,10 @@ const theme = {
     margin: 8,
     padding: 8,
   },
+  imageSize: {
+    small: 64,
+    madium: 128
+  }
 };
 
 export default theme;

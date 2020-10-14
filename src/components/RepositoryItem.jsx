@@ -11,31 +11,28 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   cardImage: {
-    height: 70,
-    width: 70,
-    marginRight: 8,
+    height: theme.imageSize.small,
+    width: theme.imageSize.small,
+    marginRight: theme.margin.medium,
     borderRadius: 6,
   },
   info: {
-    padding: 4,
+    padding: theme.padding.thin,
     flexShrink: 1,
   },
   cardButton: {
-    padding: 8,
-    backgroundColor: theme.colors.primary,
-    color: "white",
+    padding: theme.padding.medium,
+    backgroundColor: theme.backgroundColors.primary,
+    color: theme.colors.lightText,
     fontWeight: "bold",
     borderRadius: 4,
   },
   cardBar: {
-    display: theme.display.flexContainer,
     flexDirection: "row",
-    alignItems: theme.alignItems.bar,
   },
   infoBar: {
-    display: theme.display.flexContainer,
     flexDirection: "row",
-    justifyContent: theme.justifyContent.bar,
+    justifyContent: theme.justifyContent.spaced,
   },
 });
 

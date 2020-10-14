@@ -1,5 +1,6 @@
 import React from "react";
 import { FlatList, View, StyleSheet, SafeAreaView } from "react-native";
+import theme from "../theme";
 
 import RepositoryItem from "./RepositoryItem";
 
@@ -8,7 +9,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   separator: {
-    height: 10,
+    height: theme.margin.medium,
   },
 });
 
