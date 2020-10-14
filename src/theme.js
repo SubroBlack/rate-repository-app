@@ -3,6 +3,7 @@ const theme = {
     textPrimary: "rgb(36, 41, 46)",
     textSecondary: "rgb(88, 96, 105)",
     lightText: "rgb(255, 255, 255)",
+    error: "rgb(247, 17, 5)",
   },
   backgroundColors: {
     primary: "rgb(3, 102, 214)",
@@ -30,6 +31,11 @@ const theme = {
     thin: 4,
     medium: 8,
     thick: 16
+  },
+  borders: {
+    thin: 1,
+    medium: 2,
+    thick: 4
   },
   display: {
     flexContainer: "flex",
