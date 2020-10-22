@@ -16,12 +16,14 @@ const styles = StyleSheet.create({
 });
 
 const AppBarTab = (props) => {
+  const {text, to} = props;
+
   return (
     <TouchableWithoutFeedback>
-      <Link to={props.to}>
-        <Text style={styles.text}>{props.text}</Text>
+      <Link to={to}>
+        <Text style={styles.text}>{text}</Text>
       </Link>
-    </TouchableWithoutFeedback>    
+    </TouchableWithoutFeedback>
   );
 };
 

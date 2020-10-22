@@ -28,7 +28,7 @@ const repositoryNodes = repositories ? repositories.edges.map(edge => edge.node)
       ListHeaderComponent={<></>}
       data={repositoryNodes}
       ItemSeparatorComponent={ItemSeparator}
-      keyExtractor={(item) => item.fullName}
+      keyExtractor={(item) => item.id}
       renderItem={({ item }) => <RepositoryItem item={item} />}
       ListFooterComponent={<></>}
       // other props

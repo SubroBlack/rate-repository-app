@@ -5,6 +5,7 @@ query{
   repositories {
     edges {
   	  node {
+        id
         fullName
         language 
         description 
@@ -16,5 +17,11 @@ query{
       }
   	}
   }
+}
+`;
+
+export const AUTHORIZED_USER = gql`
+query{
+  authorizedUser {id, username}
 }
 `;
